@@ -1,0 +1,379 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+  background: #fff;
+}
+
+a {
+  color: #4A90D9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.title-section {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #222;
+  margin-bottom: 1.2rem;
+}
+
+.project-title .accent {
+  color: #4A90D9;
+}
+
+.authors {
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.authors a {
+  font-weight: 500;
+  color: #4A90D9;
+}
+
+.affiliations {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.6rem;
+}
+
+.affiliations span {
+  margin: 0 0.5rem;
+  white-space: nowrap;
+}
+
+.venue {
+  margin-bottom: 1.4rem;
+}
+
+.venue-badge {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  background: #f0f0f0;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  background: #fff;
+  border: 1.5px solid #d0d0d0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.btn:hover {
+  border-color: #4A90D9;
+  background: #f7faff;
+  text-decoration: none;
+}
+
+.btn-disabled {
+  opacity: 0.55;
+  cursor: default;
+  pointer-events: none;
+}
+
+.btn-note {
+  font-size: 0.78rem;
+  color: #999;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #eee;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.abstract-text {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.image-placeholder {
+  width: 100%;
+  min-height: 300px;
+  background: #f5f5f5;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 0.5rem;
+}
+
+.image-placeholder span {
+  font-size: 1rem;
+  color: #999;
+  font-weight: 500;
+}
+
+.caption {
+  font-size: 0.92rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.video-container {
+  max-width: 100%;
+  margin: 0 auto 0.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.video-container video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.module-list {
+  margin-top: 1.2rem;
+}
+
+.module-list p {
+  margin-bottom: 0.7rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid #4A90D9;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+thead th {
+  background: #f5f5f5;
+  font-weight: 600;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+tbody td {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #e0e0e0;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+.ours-row {
+  background: #e8f0fe;
+}
+
+.ours-row:hover {
+  background: #dce7fa;
+}
+
+.section-divider td {
+  padding: 0;
+  height: 2px;
+  background: #ddd;
+  border: none;
+}
+
+.table-note {
+  font-size: 0.92rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.table-footnote {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.5rem;
+  text-align: left;
+  font-style: italic;
+}
+
+.bibtex-block {
+  position: relative;
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.bibtex-block pre {
+  margin: 0;
+  overflow-x: auto;
+}
+
+.bibtex-block code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #d4d4d4;
+  white-space: pre;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  background: #333;
+  color: #ccc;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: 'Noto Sans', sans-serif;
+  transition: background 0.15s;
+}
+
+.copy-btn:hover {
+  background: #444;
+  color: #fff;
+}
+
+.footer {
+  max-width: 900px;
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #999;
+  border-top: 1px solid #eee;
+}
+
+.footer a {
+  color: #777;
+}
+
+.footer a:hover {
+  color: #4A90D9;
+}
+
+@media (max-width: 700px) {
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .section {
+    padding: 1.5rem 1rem;
+  }
+
+  .title-section {
+    padding-top: 2.5rem;
+  }
+
+  .image-placeholder {
+    min-height: 180px;
+  }
+
+  table {
+    font-size: 0.82rem;
+  }
+
+  thead th, tbody td {
+    padding: 0.4rem 0.35rem;
+  }
+
+  .buttons-row {
+    gap: 0.5rem;
+  }
+
+  .btn {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.88rem;
+  }
+}
+
+.figure-container {
+  max-width: 100%;
+  margin: 0 auto 0.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.figure-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.group-row td {
+  background: #f5f5f5;
+  font-style: italic;
+  font-weight: 600;
+  color: #444;
+  text-align: center;
+}

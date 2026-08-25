@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StereoSplat: Enhanced Sparse-View 3D Gaussian Splatting via Stereo-Depth Bootstrapping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <section class="section title-section">
+    <h1 class="project-title">
+      <span class="accent">StereoSplat</span>: Enhanced Sparse-View 3D Gaussian Splatting via Stereo-Depth Bootstrapping
+    </h1>
+    <div class="authors">
+      Hana L. Goshu<sup>1</sup>,
+      Tadesse G. Wakjira<sup>2</sup>,
+      Kin-Man Lam<sup>1</sup>
+    </div>
+    <div class="affiliations">
+      <span><sup>1</sup>The Hong Kong Polytechnic University</span>
+      <span><sup>2</sup>Kennesaw State University</span>
+    </div>
+    <div class="venue">
+      <span class="venue-badge">Under Review</span>
+    </div>
+    <div class="buttons-row">
+      <a class="btn btn-disabled" href="#" onclick="return false;" title="Coming soon">
+        <i class="fa-solid fa-file-pdf"></i> Paper
+        <span class="btn-note">(coming soon)</span>
+      </a>
+      <a class="btn" href="https://github.com/HanaLebeta/StereoSplat" target="_blank">
+        <i class="fa-brands fa-github"></i> Code
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="figure-container">
+      <img src="static/images/teaser.png" alt="StereoSplat overview" width="100%">
+    </div>
+    <p class="caption">Overview of StereoSplat. The dense stereo-depth maps estimated during training are unprojected into 3D seed points and injected as new Gaussian primitives, filtered by a within-view stereo quality mask and complemented by virtual-view photometric augmentation, filling the coverage gaps left by the Structure-from-Motion initialization from only three input views.</p>
+  </section>
+
+  <section class="section">
+    <h2>Abstract</h2>
+    <p class="abstract-text">
+      Reconstructing three-dimensional (3D) scenes from a few input views remains difficult when dense image acquisition is impractical. Recent sparse-view surface reconstruction methods based on 3D Gaussian Splatting rely on stereo matching to guide optimization; however, the dense metric depth they compute is underexploited, serving merely as a loss signal that adjusts existing primitives. To address this limitation, this study proposes StereoSplat, which converts this overlooked depth into explicit scene geometry and thereby improves novel-view synthesis while preserving or enhancing surface reconstruction. Specifically, Stereo-Depth Point Unprojection lifts dense stereo-depth maps into 3D seed points and injects them as new Gaussian primitives, filling coverage gaps left by the initial Structure-from-Motion point cloud in textureless and occluded regions. To ensure reliability, Stereo Quality Mask Selection retains only points that pass a left-right consistency check. Our analysis further shows that this within-view criterion is preferable to cross-view filtering, as the latter discards genuine surfaces visible from only a single view. In addition, Virtual View Photometric Augmentation enriches supervision by synthesizing virtual viewpoints near the training cameras and comparing the rendered appearance with forward-warped images. On the DTU dataset, StereoSplat attains a PSNR of 22.78 dB on the novel-view synthesis benchmark, surpassing state-of-the-art methods with consistent gains in SSIM, LPIPS, and AVGE. Moreover, surface accuracy is preserved under the large-overlap setting (mean Chamfer distance 0.86 versus 0.89) and improved under the little-overlap setting (0.97 versus 1.05). Overall, these results reveal that initialization coverage, instead of optimization regularization, is the dominant bottleneck in Gaussian-based sparse-view reconstruction.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Code</h2>
+    <p class="abstract-text">A minimal release is provided now; the full implementation will be released upon publication.</p>
+  </section>
+
+  <section class="section">
+    <h2>BibTeX</h2>
+    <div class="bibtex-block">
+      <button class="copy-btn" id="copy-bibtex" title="Copy to clipboard">
+        <i class="fa-regular fa-copy"></i> Copy
+      </button>
+      <pre><code id="bibtex-text">@article{stereosplat2025,
+    title   = {StereoSplat: Enhanced Sparse-View 3D Gaussian Splatting via Stereo-Depth Bootstrapping},
+    author  = {Goshu, Hana L. and Wakjira, Tadesse G. and Lam, Kin-Man},
+    year    = {2025},
+    note    = {Under Review}
+}</code></pre>
+    </div>
+  </section>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>

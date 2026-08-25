@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "StereoSplat: Enhanced Sparse-View 3D Gaussian Splatting via Stereo-Depth Bootstrapping"
+authors:
+  - family-names: Goshu
+    given-names: Hana L.
+  - family-names: Wakjira
+    given-names: Tadesse G.
+  - family-names: Lam
+    given-names: Kin-Man
+year: 2025
