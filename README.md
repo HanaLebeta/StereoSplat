@@ -45,7 +45,7 @@ Reconstructing three-dimensional (3D) scenes from a few input views remains diff
 
 ## Code
 
-A minimal release is provided in this repository. The full implementation will be released upon publication.
+The full implementation will be released upon publication.
 
 ## Citation
 
