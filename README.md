@@ -43,6 +43,26 @@
 
 Reconstructing three-dimensional (3D) scenes from a few input views remains difficult when dense image acquisition is impractical. Recent sparse-view surface reconstruction methods based on 3D Gaussian Splatting rely on stereo matching to guide optimization; however, the dense metric depth they compute is underexploited, serving merely as a loss signal that adjusts existing primitives. StereoSplat converts this overlooked depth into explicit scene geometry through Stereo-Depth Point Unprojection, Stereo Quality Mask Selection, and Virtual View Photometric Augmentation. On the DTU dataset, StereoSplat attains a PSNR of 22.78 dB on the novel-view synthesis benchmark and preserves or improves surface reconstruction accuracy.
 
+## Results
+
+**Novel-view synthesis on DTU**
+
+<div align="center">
+<img src="docs/static/images/nvs.png" width="95%">
+</div>
+
+**Surface reconstruction on DTU and BlendedMVS**
+
+<div align="center">
+<img src="docs/static/images/surface.png" width="95%">
+</div>
+
+**Per-scan PSNR on DTU**
+
+<div align="center">
+<img src="docs/static/images/psnr.png" width="80%">
+</div>
+
 ## Code
 
 The full implementation will be released upon publication.
